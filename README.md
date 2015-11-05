@@ -17,14 +17,17 @@ Install via [npm](https://www.npmjs.org)
 $ npm install airsonos -g
 ```
 
-Platform-specific install note available from [`INSTALL.md`](https://github.com/stephen/airsonos/blob/master/CHANGELOG.md)
+Platform-specific install note available from [`INSTALL.md`](https://github.com/stephen/airsonos/blob/master/INSTALL.md)
 
 Example usage
 -------------
 ```
 $ airsonos
 Searching for Sonos devices on network...
-Setting up AirSonos for Playroom {172.17.105.103:1400}
+
+Swan (@ 192.168.0.1:1400, RINCON_B8E9375433D201400:1)
+
+Search complete. Set up 1 device tunnel.
 ```
 
 Development
@@ -33,7 +36,7 @@ Development
 $ git clone https://github.com/stephen/airsonos.git
 $ cd airsonos
 $ npm install
-$ node index.js
+$ node ./bin/index.js
 ```
 
 Internally, AirSonos is a thin wrapper around the [nodetunes](https://github.com/stephen/nodetunes) and [nicercast](https://github.com/stephen/nicercast) packages.
